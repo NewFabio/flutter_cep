@@ -7,8 +7,13 @@
 
 ## Getting Started
 
-- Entendendo o projeto
+- Entendendo o projeto e criação
 - Pastas da arquitetura
+    - lib
+     - core
+     - models
+     - repositories
+     - ui    
 - Configurando Tema da aplicação
 - Construindo tela
 - Criando camada de dados
