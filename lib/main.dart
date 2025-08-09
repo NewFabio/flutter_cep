@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cep/core/theme/app_theme.dart';
 
 void main() {
   runApp(const FlutterCepApp());
@@ -10,7 +11,8 @@ class FlutterCepApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Consulta CEP', 
+      title: 'Consulta CEP',
+      theme: AppTheme.lightTheme,
       home: Container(),
     );
   }
