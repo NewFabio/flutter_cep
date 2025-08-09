@@ -13,6 +13,8 @@ class FlutterCepApp extends StatelessWidget {
     return MaterialApp(
       title: 'Consulta CEP',
       theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.system,
       home: Container(),
     );
   }
