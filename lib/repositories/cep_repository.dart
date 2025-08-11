@@ -20,8 +20,8 @@ class CepRepository {
     try {
   final response = await client.get(url);
   if (response.statusCode == 200) {
-    final jsonData = json.decode(response.body);
-    if (jsonData.constaisKey('erro')) {
+    final jsonData = json.decode(response.body) as Map<String, dynamic>;
+    if (jsonData.containsKey('erro')) {
       throw Exception('CEP não encontrado.');
     }
     return CepModel.fromJson(jsonData);
